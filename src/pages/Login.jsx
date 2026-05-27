@@ -63,7 +63,8 @@ const Login = () => {
           formData
 
         );
-        console.log(response.data);
+
+      console.log(response.data);
 
       // SAVE TOKEN
       localStorage.setItem(
@@ -203,6 +204,46 @@ const Login = () => {
             Login to your GAVATHI account
 
           </p>
+
+        </div>
+
+        {/* DEMO CREDENTIALS */}
+
+        <div className="bg-yellow-50 border border-yellow-300 border-l-4 border-l-yellow-500 rounded-2xl p-4 mb-6 shadow-sm">
+
+          <h3 className="text-yellow-800 font-bold text-sm mb-2">
+
+            Demo Seller Account (Admin)
+
+          </h3>
+
+          <div className="space-y-1 text-sm text-gray-700">
+
+            <p>
+
+              <span className="font-semibold">
+
+                Email:
+
+              </span>{" "}
+
+              hrishigaonkar4@gmail.com
+
+            </p>
+
+            <p>
+
+              <span className="font-semibold">
+
+                Password:
+
+              </span>{" "}
+
+              hrishi123
+
+            </p>
+
+          </div>
 
         </div>
 
