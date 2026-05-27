@@ -1,0 +1,26 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import { Toaster } from "react-hot-toast";
+
+import { CartProvider } from "./context/CartContext";
+import { WishlistProvider } from "./context/WishlistContext";
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <Toaster
+      position="top-center"
+      toastOptions={{
+        style: {
+          marginTop: "70px",
+        },
+      }}
+    />
+    <CartProvider>
+      <WishlistProvider>
+        <App />
+      </WishlistProvider>
+    </CartProvider>
+  </StrictMode>,
+)
