@@ -14,7 +14,7 @@ import SellerDashboard from "./pages/sellers/SellerDashboard";
 import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import SellerOrders from "./pages/SellerOrders";
-import Orders from "./pages/Orders";
+import MyOrders from "./pages/MyOrders";
 
 
 
@@ -45,7 +45,7 @@ function App() {
 
         <Route path="/seller/orders" element={<SellerOrders />}/>
 
-        <Route path="/orders" element={<Orders/>}/>
+        <Route path="/orders" element={<MyOrders/>}/>
 
       </Routes>
       </main>
